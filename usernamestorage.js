@@ -2,7 +2,7 @@
 require 'storage.js'
 
 usernames = new Array
-var username = prompt("", 'Username'')
+var username = prompt("", 'Username)
 var sys = function (add, remove){
   this.add = usernames.push
   this.remove = remove;
