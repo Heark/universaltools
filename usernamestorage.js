@@ -13,7 +13,7 @@ var error = function (log, fix){
 // assface123
 if (sys.username.length => 30){
   document.write("Username too long to be added");
-  error.log("'Error 1010/username.length/'");
+  error.log('Error 1010/username.length/');
 }
 sys.add(username);
 
