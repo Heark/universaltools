@@ -1,7 +1,6 @@
 // system that stores usernames & passwords \\
-require 'storage.js'
+require 'storage.js', usernames;
 
-usernames = new Array
 var username = prompt("", 'Username')
 var sys = function (add, remove){
   this.add = usernames.push
