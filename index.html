@@ -8,6 +8,7 @@
 <body>
 <hr />
 <script type="text/javascript">
+function system(){
 var username = prompt("", 'Username')
 var sys = function (add, remove){
   this.add = usernames.push
@@ -18,6 +19,7 @@ var error = function (log, fix){
   this.fix = str.split("/", 1);
 }
 sys.add(username);
+}
 
 function load(filename, filetype){
  if (filetype=="js"){ 
@@ -31,6 +33,9 @@ function load(filename, filetype){
 
 load("storage.js", "js");
 </script>
-<button onclick="load()">L</button>
+<center>
+<button onclick="load()">Load</button>
+<button onclick="system()">Upload username</button>
+</center>
 </body>
 </html>
