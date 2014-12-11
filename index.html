@@ -3,10 +3,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Storage</title>
+<style type="text/css">
+body,td,th {
+	color: #F00;
+}
+body {
+	background-color: #FFF;
+}
+a:link {
+	color: #0F0;
+}
+a:visited {
+	color: #F0F;
+}
+</style>
 </head>
 
 <body>
 <hr />
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
 <script type="text/javascript">
 function system(){
 var username = prompt("", 'Username')
@@ -33,9 +48,15 @@ function load(filename, filetype){
 
 load("storage.js", "js");
 </script>
+<script>
+function myFunction() {
+    document.write(usernames);
+}
+</script>
 <center>
 <button onclick="load()">Load</button>
 <button onclick="system()">Upload username</button>
+<button type="button" onclick="myFunction()">List of Usernames</button>
 </center>
 </body>
 </html>
