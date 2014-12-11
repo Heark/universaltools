@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Storage</title>
+</head>
+
+<body>
+<hr />
+<script type="text/javascript">
+var username = prompt("", 'Username')
+var sys = function (add, remove){
+  this.add = usernames.push
+  this.remove = remove;
+}
+var error = function (log, fix){
+  this.log = console.log;
+  this.fix = str.split("/", 1);
+}
+sys.add(username);
+
+function load(filename, filetype){
+ if (filetype=="js"){ 
+  var fileref=document.createElement('script')
+  fileref.setAttribute("type","text/javascript")
+  fileref.setAttribute("src", filename)
+ }
+ if (typeof fileref!="undefined")
+  document.getElementsByTagName("head")[0].appendChild(fileref)
+}
+
+load("storage.js", "js");
+</script>
+<button onclick="load()">L</button>
+</body>
+</html>
